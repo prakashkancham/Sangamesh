@@ -10,7 +10,7 @@
         enabled: yes
 
     - name: Docker image pull
-      command: docker pull "${{ secrets.DOCKER_USERNAME }}/app:latest"
+      command: docker pull prakashkancham/app:latest
       
     - name: Run Docker container
       command: docker run -itd -p 8080:8080 app:latest
