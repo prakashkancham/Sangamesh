@@ -44,5 +44,5 @@ jobs:
           ansible-playbook -i inventory playbook.yml
         env:
           ANSIBLE_PRIVATE_KEY_FILE: ${{ secrets.EC2_PRIVATE_KEY }}
-         # ANSIBLE_HOST_KEY_CHECKING: 'False'
+          ANSIBLE_HOST_KEY_CHECKING: 'False'
       
