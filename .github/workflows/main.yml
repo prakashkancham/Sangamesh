@@ -47,6 +47,7 @@ jobs:
 
       - name: Deploy Docker container using Ansible
         run: |
+          chmod 600 septkey.pem
           ansible-playbook -i inventory playbook.yml
         env:
           ANSIBLE_PRIVATE_KEY_FILE: ${{ secrets.EC2_PRIVATE_KEY }}
