@@ -13,6 +13,6 @@
       command: docker pull "${{ secrets.DOCKER_USERNAME }}/app:latest"
       
     - name: Run Docker container
-      command: docker run -itd -p 8080:8080 app
+      command: docker run -itd -p 8080:8080 app:latest
 
 
