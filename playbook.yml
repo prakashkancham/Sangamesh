@@ -1,11 +1,6 @@
 - hosts: ec2_instance
   become: yes
-  gather_facts: no
   tasks:
-    - name: Disable host key checking
-      set_fact:
-        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-
     - name: Ensure Docker is running
       service:
         name: docker
