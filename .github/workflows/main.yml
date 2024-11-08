@@ -33,11 +33,17 @@ jobs:
 
       - name: Run tests
         run: mvn test
+        
+      - name: Set up EC2 private key
+        run: |
+          echo "${{ secrets.EC2_PRIVATE_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
 
-      # Step 5: Deploy Docker container using Ansible
       - name: Deploy Docker container using Ansible
-        run: ansible-playbook -i inventory playbook.yml
+        run: |
+          ansible-playbook -i inventory playbook.yml
         env:
+          ANSIBLE_PRIVATE_KEY_FILE: ${{ secrets.EC2_PRIVATE_KEY }}
           ANSIBLE_HOST_KEY_CHECKING: 'False'
         # Assuming ec2_inventory contains the EC2 instance info (e.g., IP or DNS)
 
