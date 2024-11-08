@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: ec2_instances
   become: yes
   tasks:
     - name: Ensure Docker is running
