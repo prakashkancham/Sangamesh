@@ -7,9 +7,9 @@
         state: started
         enabled: yes
 
-    - name: Build Docker image
-      command: docker build -t app .
-
+    - name: Docker image pull
+      command: docker pull "${{ secrets.DOCKER_USERNAME }}/app:latest"
+      
     - name: Run Docker container
       command: docker run -itd -p 8080:8080 app
 
