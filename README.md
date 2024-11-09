@@ -5,23 +5,24 @@ I. **Setting Up and Running the Application Locally**
 To set up and run the Java application locally:
 
 1. **Clone the repository**:
-   git clone https://github.com/prakashkancham/sangamesh.git
+   `git clone https://github.com/prakashkancham/sangamesh.git`
  
 2. **Navigate to the project directory**:
-   cd sangamesh
+   `cd sangamesh`
  
 3. **Install dependencies**:
-   Ensure that Maven is installed on your machine. Run:
-   mvn install
+   Ensure that Maven is installed on your machine.
+   Run:
+  `mvn install`
  
-4. **Run the application**:
+5. **Run the application**:
    To build and run the application locally:
-   mvn clean package
-   java -jar target/sangamesh.jar
+   `mvn clean package`
+   `java -jar target/sangamesh.jar`
  
-5. **Running Tests**:
+6. **Running Tests**:
    To execute the tests:
-   mvn test
+   `mvn test`
  
 ---
 
