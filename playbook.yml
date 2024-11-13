@@ -13,6 +13,6 @@
       command: docker pull prakashkancham/app:latest
       
     - name: Run Docker container
-      command: docker run -itd -p 8080:8080 app:latest
+      command: docker run -itd -p 8080:8080 prakashkancham/app:latest
 
 
