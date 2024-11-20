@@ -1,6 +1,6 @@
 ---
 - name: Ansible docker deploy
-  hosts: localhost
+  hosts: ec2_instance
   become: true  # Use sudo if required
   vars:
     container_name: projectcont
