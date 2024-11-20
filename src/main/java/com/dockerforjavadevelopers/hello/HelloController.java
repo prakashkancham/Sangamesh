@@ -32,7 +32,7 @@ public class HelloController {
              + "<div class='colorful-text'>"
              + "<span style='color: #e74c3c;'>Hello, </span>"
              + "<span style='color: #f39c12;'>Welcome </span>"
-             + "<span style='color: #1abc9c;'>to Prakash </span>"
+             + "<span style='color: #1abc9c;'>to Project </span>"
              + "<span style='color: #3498db;'>Demo Session</span>"
              + "</div>"
              + "</body>"
