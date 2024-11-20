@@ -34,6 +34,7 @@ public class HelloController {
              + "<span style='color: #f39c12;'>Welcome </span>"
              + "<span style='color: #1abc9c;'>to Project </span>"
              + "<span style='color: #3498db;'>Demo Session</span>"
+             + "<span style='color: #3498db;'>with PRAKASH</span>"
              + "</div>"
              + "</body>"
              + "</html>";
